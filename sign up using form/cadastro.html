@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <title>My Form</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Por favor, insira suas informações:</p>
+        <br>
+    </div>
+    <form>
+        <fieldset class="group">
+            <div class="camp">
+                <label for="nome"><i>Nome:</i></label>
+                <input type="text" nome="nome" id="nome">
+            </div>
+            <div class="camp">
+                <label for="sobrenome"><i>Sobrenome:</i></label>
+                <input type="text" nome="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div class="camp">
+            <label for="email"><i>Email:</i></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+
+        <div class="camp">
+
+            <label><strong>Informe seu gênero:</strong></label>
+            <br>
+            <label>
+                <input type="radio" nome="gen" value="masculino"> masculino
+            </label>
+
+            <label>
+                <input type="radio" nome="gen" value="femenino" checked> femenino
+            </label>
+
+            <label>
+                <input type="radio" nome="gen" value="outros"> outros
+            </label>
+
+        </div>
+
+        <div class="camp">
+            <label for="trabalho"><strong>Informações relacionadas ao trabalho:</strong></label>
+            <select id="trabalho">
+                <option selected disabled value="">Escolha uma opção:</option>
+                <option>Desempregado</option>
+                <option>Estagiário</option>
+                <option>Trabalhando</option>
+            </select>
+            <br>
+        </div>
+
+        <fieldset class="group">
+            <div id="check">
+                <label><b>Selecione sua escolaridade:</b></label>
+                <br><br>
+                <input type="checkbox" id="ensmedio" name="ensmedio" value="ensmedio">
+                <label>Ensino Médio Completo</label>
+                <input type="checkbox" id="tecnico" name="tecnico" value="tecnico">
+                <label>Ensino Técnico Completo</label>
+                <input type="checkbox" id="faculdade" name="faculdade" value="graduacao">
+                <label>Graduação</label>
+                <input type="checkbox" id="pos" name="pos" value="posgraduacao">
+                <label>Pós-graduação ou superior</label>
+                <br><br><br>
+            </div>
+        </fieldset>
+
+        <div class="camp">
+            <label><i>Informações adicionais sobre a graduação:</i></label>
+            <textarea row="6" style="width: 26em" id="infograduacao" name="infograduacao"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
