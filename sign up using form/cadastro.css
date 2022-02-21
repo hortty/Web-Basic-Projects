@@ -1,22 +1,58 @@
+.camp#emailzin {
+    margin-left: 10%;
+}
+
+.botao:hover {
+    background: cadetblue;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
+.botao {
+    font-size: 1.2em;
+    background: #123891;
+    border: 0;
+    margin-bottom: 1em;
+    color:aliceblue;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transform: translate(-50%, -50%);
+}
+
 #titulo {
     font-family: sans-serif;
     color:#123891;
-    margin-left: 7%;
+    margin-left: 16%;
+}
+
+.botao, select{
+    cursor: pointer;
 }
 
 #subtitulo {
     font-family: sans-serif;
     color:steelblue;
-    margin-left: 1%;
+    margin-left: 12%;
 }
 
-fieldset {
-    border:0;
+.camp {
+    margin-bottom: 1em;
+}
+
+.camp label{
+    margin-bottom: 0.2em;
+    color:rgb(153, 108, 224);
+    display: block;
 }
 
 body {
@@ -36,16 +72,6 @@ textarea, input, select, button {
     border-radius: 5px;
 }
 
-.camp {
-    margin-bottom: 1em;
-}
-
-.camp label{
-    margin-bottom: 0.2em;
-    color:darkorchid;
-    display: block;
-}
-
 fieldset.group .camp {
     float: left;
     margin-right: 1em;
@@ -58,8 +84,20 @@ fieldset.group .camp {
     display:block;
 }
 
+fieldset {
+    border:0;
+}
+
 .group:before, .group:after {
     display: table;
+}
+
+.camp input:focus, .camp select:focus, .camp textarea:focus {
+    background: #98b6fb;
+}
+
+#check {
+    display: inline-block;
 }
 
 .group:after {
@@ -68,38 +106,4 @@ fieldset.group .camp {
 
 .camp select option {
     padding-right: 1em;
-}
-
-.camp input:focus, .camp select:focus, .camp textarea:focus {
-    background: #98b6fb;
-}
-
-.botao {
-    font-size: 1.2em;
-    background: #123891;
-    border: 0;
-    margin-bottom: 1em;
-    color:aliceblue;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    transform: translate(-50%, -50%);
-}
-
-.botao, select{
-    cursor: pointer;
-}
-
-.botao:hover {
-    background: cadetblue;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
-}
-
-#check {
-    display: inline-block;
 }

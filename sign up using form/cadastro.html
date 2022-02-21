@@ -10,9 +10,13 @@
     <div>
         <h1 id="titulo">Cadastro</h1>
         <p id="subtitulo">Por favor, insira suas informações:</p>
-        <br>
+        <br><br>
     </div>
     <form>
+        <div class="camp" id="emailzin">
+                <label for="email"><i>Email:</i></label>
+                <input type="email" nome="email" id="email" required>
+        </div>
         <fieldset class="group">
             <div class="camp">
                 <label for="nome"><i>Nome:</i></label>
@@ -25,29 +29,6 @@
         </fieldset>
 
         <div class="camp">
-            <label for="email"><i>Email:</i></label>
-            <input type="email" nome="email" id="email" required>
-        </div>
-
-        <div class="camp">
-
-            <label><strong>Informe seu gênero:</strong></label>
-            <br>
-            <label>
-                <input type="radio" nome="gen" value="masculino"> masculino
-            </label>
-
-            <label>
-                <input type="radio" nome="gen" value="femenino" checked> femenino
-            </label>
-
-            <label>
-                <input type="radio" nome="gen" value="outros"> outros
-            </label>
-
-        </div>
-
-        <div class="camp">
             <label for="trabalho"><strong>Informações relacionadas ao trabalho:</strong></label>
             <select id="trabalho">
                 <option selected disabled value="">Escolha uma opção:</option>
@@ -55,7 +36,21 @@
                 <option>Estagiário</option>
                 <option>Trabalhando</option>
             </select>
-            <br>
+        </div>
+
+        <div class="camp">
+            <label><strong>Informe seu gênero:</strong></label>
+            <label>
+                <input type="radio" name="gen" value="masculino"> masculino
+            </label>
+
+            <label>
+                <input type="radio" name="gen" value="femenino"> femenino
+            </label>
+
+            <label>
+                <input type="radio" name="gen" value="outros" checked> outros
+            </label>
         </div>
 
         <fieldset class="group">
